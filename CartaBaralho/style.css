@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff;
+    --color-dark: #222222;
+    --color-green:#06423d;
+}
+
+html, body, button, input {
+    font-family: 'Pridi', serif;
+}
+
+body {
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-green);
+}
+
+div.boxWrap {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 10em;
+}
+
+div#card {
+    width: 300px;
+    height: 419px;
+}
+
+div#card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+div#nameCard {
+    display: none;
+    font-size: 24px;
+}
+
+div.frase, div.textCard div.textTentativas {
+    font-size: 16px;
+    font-weight: 300;
+    width: 400px;
+    text-align: center;
+    line-height: 1.2;
+    margin: 22px 0;
+}
+
+#responseCard {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+button#btnStart, #btnPlayAgain {
+    width: 300px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.buttons > input {
+    width: 148px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.textCard, .textTentativas {
+    display: none;
+}
+
+.buttons {
+    display: none;
+}
+
+#btnPlayAgain {
+    display: none;
+}

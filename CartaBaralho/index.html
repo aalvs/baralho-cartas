@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Carta Baralho</title>
+</head>
+<body>
+    <div class="boxWrap">
+        <div id="card">
+            <img id="imgCard" src="img/default-card.png" alt="Carta">
+        </div>
+        <div id="nameCard"></div>
+        <div class="frase">Pense em uma carta, em seguida clique no botão! Vou tentar adivinhá-la.</div>
+        <div class="textCard" ><p>Sua carta é <span id="responseCard"></span></p></div>
+        <div class="textTentativas" ><span id="responseTentativas"></span></div>
+        <div class="buttons">
+            <input id="btnYes" type="button" value="Sim">
+            <input id="btnNot" type="button" value="Não">
+        </div>
+        <button id="btnStart">Clique para começar</button>
+        <button id="btnPlayAgain">Jogar novamente</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
